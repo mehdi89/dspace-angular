@@ -1,6 +1,7 @@
 {
   "watch": [
-    "config"
+    "config",
+    "src/themes"
   ],
   "ext": "json"
 }

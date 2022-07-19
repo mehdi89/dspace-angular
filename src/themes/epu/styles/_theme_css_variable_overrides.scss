@@ -1,0 +1,109 @@
+// Override or add CSS variables for your theme here
+
+:root {
+  --ds-header-logo-height: 100px;
+  --ds-home-news-background-color: #{$blue};
+  //--ds-header-logo-height-xs: 50px;
+  //--ds-header-icon-color: #{$link-color};
+  //--ds-header-icon-color-hover: #{darken($link-color, 15%)};
+}
+
+nav.navbar {
+  border-bottom: none!important;
+}
+
+.jumbotron {
+  padding: 34px 0;
+  margin-bottom: 72px;
+  margin-top: 34px;
+}
+
+.display-3 {
+  display: inline-block;
+}
+
+.homepage-image {
+  float:right;
+  margin-top:21px;
+  width: 390px;
+  height: auto;
+}
+
+ul li {
+    line-height: 1.7;
+}
+
+nav.navbar {
+  border: none!important;
+  font-weight: bold;
+}
+
+.nav-breadcrumb {
+  background-color: #FFCB00!important;
+  border-bottom: 2px solid #1B3058!important;
+  border-top: 2px solid #1B3058!important;
+  margin-bottom: 21px!important;
+}
+
+ol.breadcrumb {
+  margin: 0 auto!important;
+  background: none!important;
+}
+
+.main-content {
+  padding-bottom: var(--ds-content-spacing);
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  background-color: #fff!important;
+}
+
+div.simple-view-element-body {
+  text-align: justify!important;
+}
+
+footer {
+  border-top: none!important;
+}
+
+.top-footer {
+  background-color: #{$blue}!important;
+  color: #efefef!important;
+}
+
+.top-footer li, .top-footer span.social, .bottom-footer p {
+  font-size: 90%;
+}
+
+.top-footer a {
+  color: #efefef!important;
+}
+
+@media (max-width: 1199px) {
+  .display-3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .homepage-image {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+}
+
+
+@media (max-width: 519px) {
+  .display-3 {
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
