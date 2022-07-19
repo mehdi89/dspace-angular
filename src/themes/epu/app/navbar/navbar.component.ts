@@ -1,6 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Injector } from '@angular/core';
 import { NavbarComponent as BaseComponent } from '../../../../app/navbar/navbar.component';
 import { slideMobileNav } from '../../../../app/shared/animations/slide';
+
+// import { MenuComponent } from '../../../../app/shared/menu/menu.component';
+// import { HostWindowService } from '../../../../app/shared/host-window.service';
+// import { BrowseService } from '../../../../app/core/browse/browse.service';
+// import { MenuService } from '../../../../app/shared/menu/menu.service';
+// import { MenuID } from '../../../../app/shared/menu/menu-id.model';
+// import { ActivatedRoute } from '@angular/router';
+// import { AuthorizationDataService } from '../../../../app/core/data/feature-authorization/authorization-data.service';
 
 import { MenuItemType } from '../../../../app/shared/menu/menu-item-type.model';
 import { TextMenuItemModel } from '../../../../app/shared/menu/menu-item/models/text.model';
@@ -14,15 +22,19 @@ import { RemoteData } from '../../../../app/core/data/remote-data';
  */
 @Component({
   selector: 'ds-navbar',
-  styleUrls: ['./navbar.component.scss'],
-  templateUrl: './navbar.component.html',
+    // styleUrls: ['./navbar.component.scss'],
+    styleUrls: ['../../../../app/navbar/navbar.component.scss'],
+    templateUrl: './navbar.component.html',
+    // templateUrl: '../../../../app/navbar/navbar.component.html',
   animations: [slideMobileNav]
 })
 export class NavbarComponent extends BaseComponent {
-  ngOnInit(): void {
-    this.createMenu();
-    super.ngOnInit();
-  }
+
+  // ngOnInit(): void {
+  //   this.createMenu();
+  //   super.ngOnInit();
+  // }
+
   /**
    * Initialize all menu sections and items for this menu
    */
@@ -89,4 +101,5 @@ export class NavbarComponent extends BaseComponent {
       });
 
   }
+
 }
